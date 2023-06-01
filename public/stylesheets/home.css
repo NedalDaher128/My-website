@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #18f08b;
+  border-radius: 10px;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu{
+  display: none;
+}
+body{
+  background-color: #172026;
+}
+li{
+  cursor: pointer;
+
+}
+.icon{
+    width: 38px;
+    height: 38px;
+    background-color: red;
+    border-radius: 20px;
+}
+.fa-brands{
+    font-size: 38px;
+
+}
+#Sec_Cards_Projects{
+    background-color: #0F141A;
+    height: 90vh;
+    padding: 100px;
+    overflow: hidden;
+}
+
+.Card {
+    position: relative;
+    display: flex;
+    width: 500px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 35%;
+    bottom: 0;
+  }
+  .overlay input{
+    margin-left : 20px;
+  }
+
+  
+  /* تعديل أنماط الصورة وحاوية الصورة حسب الحاجة */
+  .Card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    
+  }
+  
+  #Sec_MoreAbout_me{
+    background-color: #172026;
+    height: 120vh;
+  }
+  #Why_Choose_Me{
+    background-color: #15222C;
+    height: 110vh;
+  } 
+  #Sec_text_about{
+    width: 1200px;
+  }
+  #Box_card{
+    width: 600px;
+  }
+
+  @media only screen and (min-width: 453px) and  (max-width: 900px) {
+    #nav_bar{
+      flex-direction: column;
+    }
+    #h1_text{
+      width: 100%;
+    }
+    #menus.active{
+      display: flex;
+      
+    }
+    #menus{
+      flex-direction: column;
+      text-align: center;
+      padding:  25px;
+      background-color: #0F141A;
+      width: 100%;
+      display: none;
+    }
+
+    #nav_bar button{
+      display: none;
+    }
+    #nav_bar ul li{
+      margin: 10px;
+    }
+    #Start_Sec{
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      flex-direction: column;
+      }
+    #Sec_text_about{
+      width: 420px;
+      text-align: center;
+    }
+    #compatible_tet{
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      flex-direction: column;
+    }
+    #Why_Choose_Me{
+      height: 250vh;
+    }
+    #Sec_Cards_Projects{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 140vh;
+    }
+    #Box_card{
+      align-items: center;
+      width:600px;
+   
+    }
+    #menu{
+      display: block;
+    }
+    #compatible_card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (min-width: 900px) and  (max-width: 1250px) {
+    #nav_bar{
+      flex-direction: column;
+    }
+    #h1_text{
+      width: 100%;
+    }
+    #menus.active{
+      display: flex;
+      
+    }
+    #menus{
+      flex-direction: column;
+      text-align: center;
+      padding:  25px;
+      background-color: #0F141A;
+      width: 100%;
+      display: none;
+    }
+
+    #nav_bar button{
+      display: none;
+    }
+    #nav_bar ul li{
+      margin: 10px;
+    }
+    #Start_Sec{
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      flex-direction: row;
+      }
+    #Sec_text_about{
+      width: 420px;
+      text-align: center;
+    }
+    #compatible_tet{
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      flex-direction: column;
+    }
+    #Why_Choose_Me{
+      height: 200vh;
+    }
+    #Sec_Cards_Projects{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 140vh;
+    }
+    #Box_card{
+      align-items: center;
+      width:600px;
+   
+    }
+    #menu{
+      display: block;
+    }
+    #compatible_card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #Why_Choose_Me_contat{
+      display: flex;
+      flex-direction: column;
+    }
+  }
